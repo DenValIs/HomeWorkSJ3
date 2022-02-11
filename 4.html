@@ -43,8 +43,12 @@
       price: 78,
     },
   ];
+    console.log(products.filter(product => product.photos?.length)) // ? позволяет получать значение на любом уровне объекта, если есть вероятность undefined или null (прочтено)
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+
+    products.sort((product1, product2) => product1.price - product2.price);
+    console.log(products);
+
 </script>
 </body>
 </html>
